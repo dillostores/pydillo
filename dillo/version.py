@@ -2,10 +2,10 @@ from cerver.utils.log import LOG_TYPE_NONE, cerver_log_both
 
 from .lib import lib
 
-DILLO_VERSION = "0.1"
-DILLO_VERSION_NAME = "Version 0.1"
-DILLO_VERSION_DATE = "09/11/2022"
-DILLO_VERSION_TIME = "15:09 CST"
+DILLO_VERSION = "0.1.1"
+DILLO_VERSION_NAME = "Version 0.1.1"
+DILLO_VERSION_DATE = "10/11/2022"
+DILLO_VERSION_TIME = "16:32 CST"
 DILLO_VERSION_AUTHOR = "Erick Salas"
 
 version = {
