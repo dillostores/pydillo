@@ -78,10 +78,6 @@ dillo_auth_create.restype = c_void_p
 dillo_auth_print_token = lib.dillo_auth_print_token
 dillo_auth_print_token.argtypes = [c_void_p]
 
-dillo_single_authentication = lib.dillo_single_authentication
-dillo_single_authentication.argtypes = [c_void_p, c_void_p, c_char_p]
-dillo_single_authentication.restype = c_uint
-
 dillo_custom_authentication_handler = lib.dillo_custom_authentication_handler
 dillo_custom_authentication_handler.argtypes = [c_void_p, c_void_p]
 dillo_custom_authentication_handler.restype = c_uint
