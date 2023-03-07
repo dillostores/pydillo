@@ -1,3 +1,5 @@
 import ctypes
 
-lib = ctypes.CDLL ("/usr/local/lib/libauth.so")
+libauth = ctypes.CDLL ("/usr/local/lib/libauth.so")
+
+libmagic = ctypes.CDLL ("/usr/local/lib/libmagic.so")
