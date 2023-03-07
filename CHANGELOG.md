@@ -1,4 +1,11 @@
 ## General
-- Added dillo validation method to handle body input
-- Updated cerver to 2.0b-56 in development Dockerfile
-- Changed package init with custom validation sources
+- Handling multiple lib sources in related configuration
+- Updated dillo package definitions & methods exports
+
+## Auth
+- Refactored internal auth methods with dedicated lib
+- Updated configuration in latest dillo service methods
+- Refactored routes dedicated methods configuration
+
+## Magic
+- Added dedicated magic library definitions & bindings
