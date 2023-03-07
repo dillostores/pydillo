@@ -1,11 +1,11 @@
 from cerver.utils.log import LOG_TYPE_NONE, cerver_log_both
 
-from .lib import lib
+from .lib import libauth, libmagic
 
-DILLO_VERSION = "0.1.2"
-DILLO_VERSION_NAME = "Version 0.1.2"
-DILLO_VERSION_DATE = "22/01/2023"
-DILLO_VERSION_TIME = "23:33 CST"
+DILLO_VERSION = "0.2"
+DILLO_VERSION_NAME = "Version 0.2"
+DILLO_VERSION_DATE = "07/03/2023"
+DILLO_VERSION_TIME = "11:02 CST"
 DILLO_VERSION_AUTHOR = "Erick Salas"
 
 version = {
@@ -16,9 +16,13 @@ version = {
 	"author": DILLO_VERSION_AUTHOR
 }
 
-dillo_libauth_version_print_full = lib.dillo_libauth_version_print_full
-dillo_libauth_version_print_version_id = lib.dillo_libauth_version_print_version_id
-dillo_libauth_version_print_version_name = lib.dillo_libauth_version_print_version_name
+dillo_libauth_version_print_full = libauth.dillo_libauth_version_print_full
+dillo_libauth_version_print_version_id = libauth.dillo_libauth_version_print_version_id
+dillo_libauth_version_print_version_name = libauth.dillo_libauth_version_print_version_name
+
+dillo_libmagic_version_print_full = libmagic.dillo_libmagic_version_print_full
+dillo_libmagic_version_print_version_id = libmagic.dillo_libmagic_version_print_version_id
+dillo_libmagic_version_print_version_name = libmagic.dillo_libmagic_version_print_version_name
 
 def pydillo_version_print_full ():
 	output = "\nPyDillo Version: {name}\n" \

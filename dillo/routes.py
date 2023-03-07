@@ -15,27 +15,27 @@ from cerver.http import http_cerver_admin_routes_set_delete_custom_data
 from cerver.http import http_cerver_enable_admin_routes_authentication
 from cerver.http import http_cerver_admin_routes_set_authentication_handler
 
-from .lib import lib
+from .lib import libauth
 
 from .auth import DILLO_AUTH_SCOPE_SINGLE
 from .auth import DILLO_AUTH_SCOPE_MANAGEMENT
 from .auth import dillo_custom_authentication_handler
 
-auth_route_delete = lib.auth_route_delete
+auth_route_delete = libauth.auth_route_delete
 auth_route_delete.argtypes = [c_void_p]
 
-auth_route_create = lib.auth_route_create
+auth_route_create = libauth.auth_route_create
 auth_route_create.restype = c_void_p
 
-auth_route_create_action = lib.auth_route_create_action
+auth_route_create_action = libauth.auth_route_create_action
 auth_route_create_action.argtypes = [c_char_p]
 auth_route_create_action.restype = c_void_p
 
-auth_route_create_role = lib.auth_route_create_role
+auth_route_create_role = libauth.auth_route_create_role
 auth_route_create_role.argtypes = [c_char_p, c_char_p]
 auth_route_create_role.restype = c_void_p
 
-auth_route_print = lib.auth_route_print
+auth_route_print = libauth.auth_route_print
 auth_route_print.argtypes = [c_void_p]
 
 # create route with common values
