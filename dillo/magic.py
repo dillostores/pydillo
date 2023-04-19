@@ -2,6 +2,23 @@ from ctypes import c_void_p, c_char_p, c_int, c_uint
 
 from .lib import libmagic
 
+SERVICE_STATUS_NONE = 0
+SERVICE_STATUS_CONNECTED = 1
+SERVICE_STATUS_READY = 2
+SERVICE_STATUS_IDLE = 3
+SERVICE_STATUS_WORK = 4
+SERVICE_STATUS_DISCONNECTED = 5
+SERVICE_STATUS_ENDING = 6
+SERVICE_STATUS_ERROR = 7
+
+service_status_to_string = libmagic.service_status_to_string
+service_status_to_string.argtypes = [c_int]
+service_status_to_string.restype = c_char_p
+
+service_status_description = libmagic.service_status_description
+service_status_description.argtypes = [c_int]
+service_status_description.restype = c_char_p
+
 MAGIC_REQUEST_NONE = 0
 MAGIC_REQUEST_STORE_REGISTER = 1
 MAGIC_REQUEST_STORE_UNREGISTER = 2
