@@ -45,5 +45,5 @@ magic_init.restype = c_uint
 magic_end = libmagic.magic_end
 
 magic_handler_make_request = libmagic.magic_handler_make_request
-magic_handler_make_request.argtypes = [c_void_p, c_int, c_char_p, c_char_p]
+magic_handler_make_request.argtypes = [c_void_p, c_int, c_char_p, c_char_p, c_char_p]
 magic_handler_make_request.restype = c_uint
