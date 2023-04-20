@@ -2,10 +2,10 @@ from cerver.utils.log import LOG_TYPE_NONE, cerver_log_both
 
 from .lib import libauth, libmagic
 
-DILLO_VERSION = "0.2"
-DILLO_VERSION_NAME = "Version 0.2"
-DILLO_VERSION_DATE = "07/03/2023"
-DILLO_VERSION_TIME = "11:02 CST"
+DILLO_VERSION = "0.2.1"
+DILLO_VERSION_NAME = "Version 0.2.1"
+DILLO_VERSION_DATE = "19/04/2023"
+DILLO_VERSION_TIME = "16:47 CST"
 DILLO_VERSION_AUTHOR = "Erick Salas"
 
 version = {
