@@ -56,7 +56,7 @@ magic_request_type_description.argtypes = [c_int]
 magic_request_type_description.restype = c_char_p
 
 magic_init = libmagic.magic_init
-magic_init.argtypes = [c_char_p, c_char_p, c_void_p, c_void_p]
+magic_init.argtypes = [c_char_p, c_uint, c_char_p, c_char_p, c_void_p, c_void_p]
 magic_init.restype = c_uint
 
 magic_end = libmagic.magic_end
