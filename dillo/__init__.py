@@ -95,4 +95,4 @@ from .version import pydillo_version_print_full
 from .version import pydillo_version_print_version_id
 from .version import pydillo_version_print_version_name
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
