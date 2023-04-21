@@ -27,6 +27,16 @@ from .auth import dillo_auth_create
 from .auth import dillo_auth_print_token
 from .auth import dillo_custom_authentication_handler
 
+from .magic import SERVICE_STATUS_NONE
+from .magic import SERVICE_STATUS_CONNECTED
+from .magic import SERVICE_STATUS_READY
+from .magic import SERVICE_STATUS_IDLE
+from .magic import SERVICE_STATUS_WORK
+from .magic import SERVICE_STATUS_DISCONNECTED
+from .magic import SERVICE_STATUS_ENDING
+from .magic import SERVICE_STATUS_ERROR
+from .magic import service_status_to_string
+from .magic import service_status_description
 from .magic import MAGIC_REQUEST_NONE
 from .magic import MAGIC_REQUEST_STORE_REGISTER
 from .magic import MAGIC_REQUEST_STORE_UNREGISTER
